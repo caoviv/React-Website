@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -7,7 +6,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <NavLink to="/" className="navbar-logo">
-            Vegemite
+            Vegemite <i class="fa-solid fa-dog" />
           </NavLink>
         </div>
       </nav>
