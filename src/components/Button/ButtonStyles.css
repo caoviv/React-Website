@@ -15,7 +15,7 @@
 .btn--primary {
   background-color: transparent;
   color: var(--white);
-  /* padding: 8px 20px; */
+  padding: 8px 20px;
   border: 1px solid var(--white);
   transition: all 0.3s ease-out;
 }
