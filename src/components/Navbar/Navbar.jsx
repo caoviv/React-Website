@@ -1,10 +1,22 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "../Button/Button";
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
+  const [button, setButton] = useState(true);
 
   const handleMenuToggle = () => setMenuToggle(!menuToggle);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -25,21 +37,34 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/services" className="nav-links" onClick={handleMenuToggle}>
+              <NavLink
+                to="/services"
+                className="nav-links"
+                onClick={handleMenuToggle}
+              >
                 Services
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/products" className="nav-links" onClick={handleMenuToggle}>
+              <NavLink
+                to="/products"
+                className="nav-links"
+                onClick={handleMenuToggle}
+              >
                 Products
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/products" className="nav-links-mobile" onClick={handleMenuToggle}>
+              <NavLink
+                to="/products"
+                className="nav-links-mobile"
+                onClick={handleMenuToggle}
+              >
                 Sign Up
               </NavLink>
             </li>
           </ul>
+          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>
       </nav>
     </>
