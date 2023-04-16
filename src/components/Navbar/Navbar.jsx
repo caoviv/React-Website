@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Button/Button";
+import "./NavbarStyles.css";
 
 function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -54,7 +55,7 @@ function Navbar() {
                 Products
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
                 to="/products"
                 className="nav-links-mobile"
