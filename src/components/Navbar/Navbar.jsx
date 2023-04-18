@@ -8,6 +8,7 @@ function Navbar() {
   const [button, setButton] = useState(true);
 
   const handleMenuToggle = () => setMenuToggle(!menuToggle);
+  const closeMobileMenu = () => setMenuToggle(false);
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -41,7 +42,7 @@ function Navbar() {
               <NavLink
                 to="/services"
                 className="nav-links"
-                onClick={handleMenuToggle}
+                onClick={closeMobileMenu}
               >
                 Services
               </NavLink>
@@ -50,16 +51,16 @@ function Navbar() {
               <NavLink
                 to="/products"
                 className="nav-links"
-                onClick={handleMenuToggle}
+                onClick={closeMobileMenu}
               >
                 Products
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/products"
+                to="/sign-up"
                 className="nav-links-mobile"
-                onClick={handleMenuToggle}
+                onClick={closeMobileMenu}
               >
                 Sign Up
               </NavLink>
