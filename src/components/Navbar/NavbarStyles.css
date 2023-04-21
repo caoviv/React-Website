@@ -76,9 +76,9 @@
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
+  /* .NavbarItems {
     position: relative;
-  }
+  } */
 
   .nav-menu {
     display: flex;
@@ -130,7 +130,7 @@
     cursor: pointer;
   }
 
-  .fa-times {
+  .fa-xmark {
     color: var(--white);
     font-size: 2rem;
   }

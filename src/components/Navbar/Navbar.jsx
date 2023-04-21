@@ -29,7 +29,7 @@ function Navbar() {
           </NavLink>
           <div className="menu-icon" onClick={handleMenuToggle}>
             <i
-              className={menuToggle ? "fa-solid fa-x" : "fa-solid fa-bars"}
+              className={menuToggle ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
             ></i>
           </div>
           <ul className={menuToggle ? "nav-menu active" : "nav-menu"}>
