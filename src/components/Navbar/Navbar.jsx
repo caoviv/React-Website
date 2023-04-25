@@ -28,7 +28,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <NavLink to="/" className="navbar-logo">
+          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Vegemite <i class="fa-solid fa-dog" />
           </NavLink>
           <div className="menu-icon" onClick={handleMenuToggle}>
@@ -38,7 +38,7 @@ function Navbar() {
           </div>
           <ul className={menuToggle ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={handleMenuToggle}>
+              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </NavLink>
             </li>
