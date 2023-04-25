@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Button/Button";
 import "./NavbarStyles.css";
@@ -17,6 +17,10 @@ function Navbar() {
       setButton(true);
     }
   };
+
+  useEffect(() => {
+    showButton();
+  }, []);
 
   window.addEventListener("resize", showButton);
 
