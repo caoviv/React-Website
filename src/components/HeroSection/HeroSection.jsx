@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button";
+import "./HeroSectionStyles.css";
 
 function HeroSection() {
   return (
@@ -13,6 +14,13 @@ function HeroSection() {
           buttonSize="btn--large"
         >
           GET STARTED
+        </Button>
+        <Button
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+        >
+          WATCH TRAILER <i class="fa-solid fa-circle-play" />
         </Button>
       </div>
     </div>
