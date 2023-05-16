@@ -50,13 +50,6 @@ function Footer() {
             <NavLink to="/">Agency</NavLink>
             <NavLink to="/">Influencer</NavLink>
           </div>
-          <div className="footer-link-items">
-            <h2>Social Media</h2>
-            <NavLink to="/">Instagram</NavLink>
-            <NavLink to="/">Facebook</NavLink>
-            <NavLink to="/">Youtube</NavLink>
-            <NavLink to="/">Twitter</NavLink>
-          </div>
         </div>
       </div>
       <section className="social-media">
