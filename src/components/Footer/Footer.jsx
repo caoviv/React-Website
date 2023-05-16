@@ -59,6 +59,15 @@ function Footer() {
           </div>
         </div>
       </div>
+      <section className="social-media">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
+            <NavLink to="/" className="social=logo">
+              Vegemite <i class="fa-solid fa-dog" />
+            </NavLink>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
