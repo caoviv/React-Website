@@ -46,22 +46,22 @@ function Navbar() {
                 Home
               </NavLink>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <NavLink
                 to="/services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Placeholder
+                Services
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <NavLink
                 to="/products"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Recent
+                Products
               </NavLink>
             </li>
             <li>
