@@ -69,6 +69,48 @@ function Footer() {
           <small className="website-rights">
             Vegemite &copy; {new Date().getFullYear()}
           </small>
+          <div className="social-icons">
+            <NavLink
+              className="social-icon-link"
+              to="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f" />
+            </NavLink>
+            <NavLink
+              class="social-icon-link instagram"
+              to="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram" />
+            </NavLink>
+            <NavLink
+              class="social-icon-link youtube"
+              to="/"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube" />
+            </NavLink>
+            <NavLink
+              class="social-icon-link twitter"
+              to="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter" />
+            </NavLink>
+            <NavLink
+              class="social-icon-link linkedin"
+              to="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin" />
+            </NavLink>
+          </div>
         </div>
       </section>
     </div>
