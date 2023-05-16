@@ -38,11 +38,7 @@ function Navbar() {
           </div>
           <ul className={menuToggle ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
-                to="/home"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </NavLink>
             </li>
