@@ -66,6 +66,9 @@ function Footer() {
               Vegemite <i class="fa-solid fa-dog" />
             </NavLink>
           </div>
+          <small className="website-rights">
+            Vegemite &copy; {new Date().getFullYear()}
+          </small>
         </div>
       </section>
     </div>
