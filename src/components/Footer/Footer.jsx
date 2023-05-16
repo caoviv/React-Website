@@ -55,7 +55,7 @@ function Footer() {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <NavLink to="/" className="social=logo">
+            <NavLink to="/" className="social-logo">
               Vegemite <i class="fa-solid fa-dog" />
             </NavLink>
           </div>
@@ -72,7 +72,7 @@ function Footer() {
               <i class="fab fa-facebook-f" />
             </NavLink>
             <NavLink
-              class="social-icon-link instagram"
+              className="social-icon-link"
               to="/"
               target="_blank"
               aria-label="Instagram"
@@ -80,7 +80,7 @@ function Footer() {
               <i class="fab fa-instagram" />
             </NavLink>
             <NavLink
-              class="social-icon-link youtube"
+              className="social-icon-link"
               to="/"
               target="_blank"
               aria-label="Youtube"
@@ -88,7 +88,7 @@ function Footer() {
               <i class="fab fa-youtube" />
             </NavLink>
             <NavLink
-              class="social-icon-link twitter"
+              className="social-icon-link"
               to="/"
               target="_blank"
               aria-label="Twitter"
@@ -96,7 +96,7 @@ function Footer() {
               <i class="fab fa-twitter" />
             </NavLink>
             <NavLink
-              class="social-icon-link linkedin"
+              className="social-icon-link"
               to="/"
               target="_blank"
               aria-label="LinkedIn"
